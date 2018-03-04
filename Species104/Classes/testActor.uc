@@ -1,0 +1,16 @@
+class TestActor extends Actor;
+
+//#exec MESH IMPORT MESH=TEST ANIVFILE=Meshes\TEST_a.3d DATAFILE=Meshes\TEST_d.3d ZEROTEX=1
+
+//#exec MESH SEQUENCE MESH=TEST             SEQ=All              STARTFRAME=0   NUMFRAMES=1
+//#exec MESH SEQUENCE MESH=TEST             SEQ=Still            STARTFRAME=0   NUMFRAMES=1
+//#exec MESH SEQUENCE MESH=TEST             SEQ=Attack           STARTFRAME=0   NUMFRAMES=1   RATE=1
+
+//#exec MESHMAP SCALE MESHMAP=TEST X=0.00390625 Y=0.00390625 Z=0.00390625
+//#exec TEXTURE IMPORT NAME=TESTTex0  FILE=Meshes\GrayTex1.pcx GROUP=Skins
+//#exec MESHMAP SETTEXTURE MESHMAP=TEST NUM=0  TEXTURE=TESTTex0
+
+defaultproperties
+{
+    DrawType=DT_Mesh
+}
