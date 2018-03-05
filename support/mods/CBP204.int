@@ -1,0 +1,4 @@
+[Public]
+Preferences=(Caption="CBP",Parent="Advanced Options")
+Preferences=(Caption="General",Parent="CBP",Class=CBP204.CBPGame,Immediate=True)
+Preferences=(Caption="Map List",Parent="CBP",Class=CBP204.CBPMapList,Immediate=True)
